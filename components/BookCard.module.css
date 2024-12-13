@@ -1,0 +1,28 @@
+.bookCard {
+  background: var(--card-bg-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bookCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.viewButton {
+  background: var(--button-bg-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  transition: background 0.3s ease;
+}
+
+.viewButton:hover {
+  background: var(--button-hover-bg-color);
+}

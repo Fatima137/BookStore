@@ -1,0 +1,41 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-bg-color: #ffffff;
+  --button-bg-color: #0070f3;
+  --button-hover-bg-color: #005bb5;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #e5e5e5;
+  --card-bg-color: #1f1f1f;
+  --button-bg-color: #3a7bd5;
+  --button-hover-bg-color: #4c91e8;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.toggleButton {
+  position: fixed;
+  top: 1rem;
+  right: 2rem; /* Moves button to the extreme right */
+  background: var(--button-bg-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.toggleButton:hover {
+  background: var(--button-hover-bg-color);
+}
